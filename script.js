@@ -18,9 +18,9 @@ function makeGrid() {
     canvas.innerHTML = '';
 
     // Draw the grid and add listener
-    for (let i = 0; i < height; i++) {
+    for (let i = 0; i < width; i++) {
         let row = canvas.insertRow(i);
-        for (let j = 0; j < width; j++) {
+        for (let j = 0; j < height; j++) {
             let cell = row.insertCell(j);
             cell.addEventListener('click', function() {
                 cell.style.backgroundColor = color;
